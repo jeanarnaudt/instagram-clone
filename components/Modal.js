@@ -1,5 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { CameraIcon } from '@heroicons/react/outline'
+import { CameraIcon } from '@heroicons/react/24/outline'
 import { Fragment, useRef, useState } from 'react'
 import { useSession } from 'next-auth/react'
 import { useRecoilState } from 'recoil'
@@ -109,9 +109,9 @@ const Modal = () => {
 								{selectedFile ? (
 									<img
 										src={selectedFile}
+										alt=''
 										className='w-full object-contain cursor-pointer'
 										onClick={() => setSelectedFile(null)}
-										alt=''
 									/>
 								) : (
 									<div

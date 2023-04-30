@@ -1,13 +1,16 @@
 import { signOut, useSession } from 'next-auth/react'
+import Image from 'next/image'
 
 const MiniProfile = () => {
 	const { data: session } = useSession()
 
 	return (
 		<div className='flex items-center justify-between mt-14 ml-10'>
-			<img
+			<Image
 				className='w-16 h-16 rounded-full border p-[2px]'
 				src={session?.user?.image}
+				width={40}
+				height={40}
 				alt=''
 			/>
 

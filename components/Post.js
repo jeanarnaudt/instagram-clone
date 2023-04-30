@@ -5,8 +5,8 @@ import {
 	EmojiHappyIcon,
 	HeartIcon,
 	PaperAirplaneIcon,
-} from '@heroicons/react/outline'
-import { HeartIcon as HeartIconFilled } from '@heroicons/react/solid'
+} from '@heroicons/react/24/outline'
+import { HeartIcon as HeartIconFilled } from '@heroicons/react/24/solid'
 import {
 	serverTimestamp,
 	collection,
@@ -39,7 +39,7 @@ const Post = ({ id, username, userImg, img, caption }) => {
 				),
 				(snapshot) => setComments(snapshot.docs)
 			),
-		[db]
+		[db, id]
 	)
 
 	useEffect(
