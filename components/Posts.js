@@ -14,7 +14,7 @@ const Posts = () => {
 					setPosts(snapshot.docs)
 				}
 			),
-		[db]
+		[]
 	)
 
 	return (
