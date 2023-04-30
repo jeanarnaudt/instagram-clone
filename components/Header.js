@@ -24,14 +24,14 @@ const Header = () => {
 				{/* Left */}
 				<div
 					onClick={() => router.push('/')}
-					className="relative hidden lg:inline-grid h-24 w-24 cursor-pointer"
+					className="relative hidden lg:inline-grid h-auto w-24 cursor-pointer"
 				>
 					<Image
 						src="https://links.papareact.com/ocw"
 						alt=""
 						width={120}
 						height={40}
-						style={{ objectFit: 'contain' }}
+						style={{ objectFit: 'cover' }}
 					/>
 				</div>
 

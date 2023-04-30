@@ -3,23 +3,6 @@ import { useEffect, useState } from 'react'
 import { db } from '../firebase'
 import Post from './Post'
 
-const posts = [
-	{
-		id: 123,
-		username: 'Sssssangha',
-		userImg: 'https://links.papareact.com/3ke',
-		img: 'https://links.papareact.com/3ke',
-		caption: 'SUSCRIBE AND DESTROY THE LIKE BUTTON',
-	},
-	{
-		id: 123,
-		username: 'Sssssangha',
-		userImg: 'https://links.papareact.com/3ke',
-		img: 'https://links.papareact.com/3ke',
-		caption: 'SUSCRIBE AND DESTROY THE LIKE BUTTON',
-	},
-]
-
 const Posts = () => {
 	const [posts, setPosts] = useState([])
 
