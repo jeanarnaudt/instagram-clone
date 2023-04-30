@@ -1,6 +1,6 @@
 import {
 	BookmarkIcon,
-	ChatIcon,
+	ChatBubbleOvalLeftIcon as ChatIcon,
 	EllipsisHorizontalIcon as DotsHorizontalIcon,
 	FaceSmileIcon as EmojiHappyIcon,
 	HeartIcon,
