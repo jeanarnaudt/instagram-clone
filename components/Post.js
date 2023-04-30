@@ -1,8 +1,8 @@
 import {
 	BookmarkIcon,
 	ChatIcon,
-	DotsHorizontalIcon,
-	EmojiHappyIcon,
+	EllipsisHorizontalIcon as DotsHorizontalIcon,
+	FaceSmileIcon as EmojiHappyIcon,
 	HeartIcon,
 	PaperAirplaneIcon,
 } from '@heroicons/react/24/outline'
@@ -39,7 +39,7 @@ const Post = ({ id, username, userImg, img, caption }) => {
 				),
 				(snapshot) => setComments(snapshot.docs)
 			),
-		[db, id]
+		[db]
 	)
 
 	useEffect(
